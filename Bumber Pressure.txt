@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="start_measuring" />
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_start"
+        android:layout_below="@+id/btn_start"
+        android:text="First Pressure Reading..."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <TextView
+          android:id="@+id/textView3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/textView1"
+          android:layout_below="@+id/textView1"
+          android:layout_marginTop="19dp"
+          android:text="Second Pressure Reading..."
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/textView3"
+          android:layout_alignRight="@+id/btn_start"
+          android:layout_below="@+id/textView3"
+          android:layout_marginTop="26dp"
+          android:text="Result"
+          android:textAppearance="?android:attr/textAppearanceMedium" />
+
+      <WebView
+          android:id="@+id/webView1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignTop="@+id/btn_start"
+          android:layout_toRightOf="@+id/textView2" />
+
+</RelativeLayout>
